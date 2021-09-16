@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= title %></title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+  <link rel="stylesheet" href="./stylesheets/style.css">
+</head>
+<body>
+<div class="testbox">
+  <form action="/" method="post">
+    <div class="banner">
+      <h1><%= title %></h1>
+    </div>
+    <div class="item">
+      <p>Name</p>
+      <div class="name-item">
+        <input type="text" name="name"/>
+      </div>
+    </div>
+    <div class="item">
+      <p>Email</p>
+      <input type="text" name="email"/>
+    </div>
+    <div class="item">
+      <p>Phone</p>
+      <input type="text" name="phone"/>
+    </div>
+    <div class="item">
+      <p>Address</p>
+      <input type="text" name="address"/>
+    </div>
+    <div class="question">
+      <p>Gender</p>
+      <div class="question-answer">
+        <div>
+          <input type="radio" value="female" id="radio_1" name="gender" checked/>
+          <label for="radio_1" class="radio"><span>Female</span></label>
+        </div>
+        <div>
+          <input type="radio" value="male" id="radio_2" name="gender"/>
+          <label for="radio_2" class="radio"><span>Male</span></label>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <p>Note</p>
+      <textarea name="note" rows="3"></textarea>
+    </div>
+
+    <div class="btn-block">
+      <button type="submit" href="/">Send</button>
+    </div>
+  </form>
+</div>
+</body>
+</html>
